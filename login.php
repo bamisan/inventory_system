@@ -33,7 +33,7 @@ if(isset($_POST['login']))
         $result = $statement->fetchAll();
         foreach($result as $row)
         {
-            if($_POST["user_password"] == $row["user_password"])
+            if($_POST["user_password"] == $row["user_password"]) 
             {
                 if($row['user_status'] == 'active')
                 {
@@ -82,8 +82,8 @@ if(isset($_POST['login']))
     <h2 align="center">inventory system using php and ajax</h2>
     <br />
     <div class="panel panel-default">
-        <div class="panel headin">login</div>
-        <div class="panel body">
+        <div class="panel-heading">login</div>
+        <div class="panel-body">
             <form method="post">
             <?php echo $message; ?>
 
