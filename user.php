@@ -12,22 +12,24 @@ include('header.php');
 
 ?>
 
-    <span id="alert_action"></span>
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
+<span id="alert_action"></span>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-default">
                 <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-lg-10 col-md-10 col-sm-8 col-xs-6">
-                            <h3 class="panel-title">user list</h3><hr>
-                        </div>
-                        
-                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6" align="right">
-                            	<button type="button" name="add" id="add_button" data-toggle="modal" data-target="#userModal" class="btn btn-success btn-xs">Add</button>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-6">
+                        <div class="row">
+                            <h3 class="panel-title">User List</h3>
                         </div>
                     </div>
-
-                    <div class="panel-body">
+                        
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6" align="right">
+                        <button type="button" name="add" id="add_button" data-toggle="modal" data-target="#userModal" class="btn btn-success btn-xs">Add</button>
+                        </div>
+					
+					<div style="clear:both"></div>
+                </div>
+					<div class="panel-body">
                         <div class="row"><div class="col-sm-12 table-responsive">
                         <table id="user_data" class="table table-bordered table-striped">
 
