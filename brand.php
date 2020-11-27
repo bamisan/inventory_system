@@ -181,7 +181,7 @@ $(document).ready(function(){
 				"orderable":false,
 			},
 		],
-		"pageLength": 10
+		"pageLength": 25
 	});
 });
 </script>

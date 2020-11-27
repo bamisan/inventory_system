@@ -10,7 +10,7 @@ if(isset($_POST['btn_action']))
 		INSERT INTO user_details (user_email, user_password, user_name, user_type, user_status) 
 		VALUES (:user_email, :user_password, :user_name, :user_type, :user_status)
 		";	
-		$statement = $connect->prepare($query);
+		$statement = $connect->prepare($query);  //start
 		$statement->execute(
 			array(
 				':user_email'		=>	$_POST["user_email"],

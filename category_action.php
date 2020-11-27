@@ -11,15 +11,19 @@
 			VALUES (:category_name)
 			";
 			$statement = $connect->prepare($query);
-			$statement->execute(
+		    $result = $statement->execute(
 				array(
 					':category_name'	=>	$_POST["category_name"]
 				)
 			);
-			$result = $statement->fetchAll();
-			if(isset($result))
+			// $result = $statement->fetchAll();
+			// print_r($result);
+			if($result == 1)
 			{
 				echo 'Category Name Added';
+			}
+			else{
+				echo 'already exist';
 			}
 		}
 	}
